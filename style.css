@@ -1,0 +1,143 @@
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+
+body{
+    background:  hsl(225, 100%, 94%);
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+main{
+    min-height: 100vh;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    min-height: 75vh;
+    width: 23vw;
+    background: white;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    overflow: hidden;
+}
+.container1{
+    background-image: url('./images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+}
+.container2{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.descripcion{
+    color: gray;
+    font-weight: 600;
+    font-size: 1.2rem;   
+    width: 85%;
+}
+.precio{
+    display: flex;
+    justify-content:space-between;
+    padding: 1.5rem;
+    background: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    width: 90%;
+}
+.precioA{
+    display: flex;
+    width: 100%;
+}
+.notamusic{
+    margin-right: 1rem;
+}
+.change{
+    display: flex;
+    align-items: center;
+}
+.change a{
+    font-weight:900;
+    font-size: 1rem;
+    color: hsl(245, 75%, 52%);
+}
+.annual p{
+    font-weight: 900;   
+}
+.annual{
+    font-size: 1.2rem;
+}
+.annual p:nth-last-child(1){
+    color: gray;
+    font-weight: 800; 
+}
+.payment{
+    background: hsl(245, 75%, 52%);
+    color: white;
+    width: 90%;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+    box-shadow: 2px 32px 46px -20px rgba(21, 26, 54, 0.55);
+    cursor: pointer;
+}
+.payment:hover{
+    color: yellow;
+}
+.cancel{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+}
+@media (max-width:375px) {
+    main{
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+    .container{
+        min-height: 85vh;
+        width: 90vw;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .descripcion{
+        font-size: 1rem;
+    }
+    .notamusic{
+        margin-right: 0.2rem;
+    }
+    .annual{
+        font-size: 1rem;
+    }
+    .precio{
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .payment{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .container2{
+        margin: 0.5rem;
+    }
+}
+@media (max-width:1440px){
+    .container{
+        min-height: 85vh;
+        width: 90vw;
+    }
+
+}
